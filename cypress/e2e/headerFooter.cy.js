@@ -8,7 +8,7 @@ describe('Header and Footer Buttons Exist and Visible', () => {
       });
     });
   
-    it('should check that header buttons exist', () => {
+    it('should check that header buttons exist and visible', () => {
       cy.contains('Home').should('exist').and('be.visible');
       cy.contains('About').should('exist').and('be.visible');
       cy.contains('Contact').should('exist').and('be.visible');
@@ -16,7 +16,7 @@ describe('Header and Footer Buttons Exist and Visible', () => {
       cy.contains('Sign In').should('exist').and('be.visible');
     });
 
-    it('should check that footer icons exist', () => {    
+    it('should check that footer icons exist and visible', () => {    
         cy.get('a.socials_link').filter('[href*="facebook.com/Hillel.IT.School"]')
         .should('exist').and('be.visible');
         cy.get('a.socials_link').filter('[href*="t.me/ithillel_kyiv"]')
@@ -29,7 +29,7 @@ describe('Header and Footer Buttons Exist and Visible', () => {
         .should('exist').and('be.visible'); 
       });
 
-    it('should check that footer links exist', () => {
+    it('should check that footer links exist and visible', () => {
       cy.contains('ithillel.ua').should('exist').and('be.visible');
       cy.contains('support@ithillel.ua').should('exist').and('be.visible');;
    });
